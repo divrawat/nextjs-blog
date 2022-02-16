@@ -1,0 +1,228 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 70px;
+    padding: 0px 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+}
+
+
+/* Footer */
+Footer{
+    width: 100%;
+    height: 75px;
+    line-height: 80px;
+    padding: 0px 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    
+}
+
+.footerlink{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+.copyright{
+    /* border-top: 1px solid black ; */
+    margin-top: 25px;
+    width: 100%;
+    box-shadow:  0px -2px 0px rgba(0, 0, 0, 0.15);
+}
+.copy{
+    text-align: center;
+    
+    padding: 28px 5px 5px 5px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+Footer ul{
+    /* float: right; */
+    text-align: center;
+}
+
+Footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+Footer ul li a{
+    text-decoration: none;
+    font-size: 17.5px;
+    padding: 0px 14px;
+    color: black;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+Footer ul li a:hover{
+color: rgb(44, 138, 48);
+}
+/* Footer */
+
+span{
+    display: none;
+    float: right;
+    cursor: pointer;
+    float: right;
+}
+
+#check{
+    display: none;
+}
+
+nav .logo{
+    float: left;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17.5px;
+    padding: 0px 13.5px;
+    color: black;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul li a:hover{
+    color: rgb(44, 138, 48);
+}
+#hidesearch,#hidemoon{
+    display: none;
+    float: right;
+    cursor: pointer;
+    float: right;
+    margin-top: 25px;
+}
+#hidemoon{
+    margin-right: 18px;
+}
+#overlay-content{
+    margin-left: 35%;
+    display: none;
+    width: 65%;
+    margin-top: 20px;
+    
+}
+
+.placeholdersearch{
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    width: 400px;   
+    outline: none;
+}
+
+
+#cross{
+    margin-left: 15px;
+    margin-top: 15PX;
+    cursor: pointer;
+}
+@media screen and (max-width:1082px) {
+    nav{
+        padding: 0px 50px;
+    }
+    span{
+        display: block;
+        margin-right: -25px;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: WHITE;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked ~ul{
+        left:0px;
+    }
+    #hidesearch,#hidemoon{
+        display: block;
+    }
+    #hidesearch{
+        margin-right: 10px;
+    }
+    .placeholdersearch{
+        height: 40px;
+        text-align: center;
+        width: 200px;
+        
+    }
+}
+
+@media screen and (max-width:409px){
+    .placeholdersearch{
+        height: 30px;
+        text-align: center;
+        width: 200px;
+        margin-left: -5%;
+        
+    }
+    #id{
+        height: 15px;
+        width: 15px;
+    }
+}
+@media screen and (max-width:624px){
+    Footer ul{
+        width: 100%;
+        text-align: left;
+    }
+    Footer ul li a{
+         font-size: 10px;
+         padding: 5px;
+    }
+    Footer ul li {
+        height: 50px;
+    }
+}
+@media screen and (max-width:455px){
+    #overlay-content{
+        margin-left: 10%;
+    }
+    form{
+        width: 250px;
+    }
+        
+}
+@media screen and (max-width:390px){
+    Footer ul li a{
+        font-size: 8px;
+        padding: 2PX;
+        
+   }
+   Footer ul li {
+    margin-left: 5PX;
+    
+}
+   Footer ul{
+    width: 135%;
+    margin-left: -25PX;
+    
+}
+}
